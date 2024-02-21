@@ -14,15 +14,20 @@ function returned by recVolume should continue to return the original volume.
 ***********************************************************************/
 
 const recVolume = height => {
-  let vol = height;
+  let nums = [height];
 
-    return function(width) {
-
-     return function(length) {
-
-        return vol;
+    return function values(lengthOrWidth) {
+      nums.push(lengthOrWidth);
+      if (nums.length === 3) {
+        let volume = nums[0] * nums[1] * nums[2];
+        return volume;
       }
+      else {
+        return values;
+      }
+
     }
+
   }
 
 

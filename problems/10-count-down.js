@@ -29,13 +29,13 @@ Example 4:
 ***********************************************************************/
 
 const countDownTimer = n => {
-console.log(n);
+// console.log(n);
   if (n < 1) {
     return "Happy New Year!";
   }
 
   return function countdown() {
-    console.log(n)
+    // console.log(n)
      n--;
      if (n <= 0) {
       return "Happy New Year!";
